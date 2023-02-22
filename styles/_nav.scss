@@ -1,7 +1,7 @@
 .nav {
-  display: flex;
   padding: 20px;
-  margin: 20px;
+  display: flex;
+
   justify-content: space-between;
   align-items: center;
   &_subcontainer {
@@ -16,18 +16,18 @@
   width: 90px;
   height: 20px;
 }
-%nav_style {
-  font-family: "Mulish";
+%nav__link_style {
+  font-family: styles.$primary-font;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: -0.346154px;
-  color: #111111;
+  color: styles.$primary-color;
   text-decoration: none;
 }
 
 .nav_link {
-  @extend %nav_style;
+  @extend %nav__link_style;
   //ADD ACTIVE HOVER & VISITED LATER
 }

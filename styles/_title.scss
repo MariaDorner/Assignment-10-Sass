@@ -1,0 +1,43 @@
+.main_title {
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  &_container {
+    display: flex;
+    flex-direction: column;
+    width: 635px;
+    height: 251px;
+  }
+  &_sml {
+    font-family: styles.$primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.423077px;
+    color: #4a4ff2;
+  }
+  &_big {
+    font-family: styles.$primary-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: styles.$primary-color;
+  }
+  &_quote {
+    font-family: styles.$primary-font;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: styles.$primary-color;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+}
+
+.title_sec_color {
+  color: #4a4ff2;
+}
