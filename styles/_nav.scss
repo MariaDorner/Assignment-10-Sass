@@ -6,10 +6,8 @@
   align-items: center;
   &_subcontainer {
     display: flex;
+    align-items: center;
     column-gap: 20px;
-  }
-  &_li {
-    padding: 20px;
   }
 }
 .logo {
@@ -29,5 +27,14 @@
 
 .nav_link {
   @extend %nav__link_style;
+  padding: 20px;
   //ADD ACTIVE HOVER & VISITED LATER
+}
+//Footer
+.footer_container {
+  column-gap: 75px;
+}
+.logo_container {
+  display: flex;
+  column-gap: 20px;
 }

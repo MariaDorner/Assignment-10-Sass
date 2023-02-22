@@ -1,3 +1,15 @@
+%awards_txt_sml {
+  font-family: styles.$primary-font;
+  font-style: normal;
+  color: styles.$primary-color;
+}
+@mixin opacity($opacity, $mix-blend-mode) {
+  opacity: $opacity;
+  mix-blend-mode: $mix-blend-mode;
+}
+@mixin border {
+  border-bottom: 2px solid #d8d8d8;
+}
 .awards {
   display: flex;
   flex-direction: column;
@@ -7,6 +19,7 @@
 .awds_container_1 {
   display: flex;
   justify-content: space-between;
+  @include border;
   &_flex {
     display: flex;
     flex-direction: column;
@@ -21,15 +34,7 @@
   color: styles.$primary-color;
   max-width: 600px;
 }
-%awards_txt_sml {
-  font-family: styles.$primary-font;
-  font-style: normal;
-  color: styles.$primary-color;
-}
-@mixin opacity($opacity, $mix-blend-mode) {
-  opacity: $opacity;
-  mix-blend-mode: $mix-blend-mode;
-}
+
 .awds1_text_style {
   @extend%awards_txt_sml;
   @include opacity(0.6, normal);
@@ -41,6 +46,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
+  @include border;
 }
 
 .awds_type_1 {
