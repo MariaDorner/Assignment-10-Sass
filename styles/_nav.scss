@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  &_subcontainer {
+    display: flex;
+    column-gap: 20px;
+  }
+  &_li {
+    padding: 20px;
+  }
+}
+.logo {
+  width: 90px;
+  height: 20px;
+}
+%nav_style {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  color: #111111;
+  text-decoration: none;
+}
+
+.nav_link {
+  @extend %nav_style;
+  //ADD ACTIVE HOVER & VISITED LATER
+}

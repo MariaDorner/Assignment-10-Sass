@@ -1,0 +1,7 @@
+@use "styles";
+
+@import "nav";
+
+body {
+  background-color: styles.$primary-background-color;
+}
