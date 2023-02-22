@@ -1,10 +1,12 @@
 .awards {
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .awds_container_1 {
   display: flex;
+  justify-content: space-between;
   &_flex {
     display: flex;
     flex-direction: column;
@@ -17,8 +19,24 @@
   font-size: 28px;
   line-height: 38px;
   color: styles.$primary-color;
+  max-width: 600px;
 }
-
+%awards_txt_sml {
+  font-family: styles.$primary-font;
+  font-style: normal;
+  color: styles.$primary-color;
+}
+@mixin opacity($opacity, $mix-blend-mode) {
+  opacity: $opacity;
+  mix-blend-mode: $mix-blend-mode;
+}
+.awds1_text_style {
+  @extend%awards_txt_sml;
+  @include opacity(0.6, normal);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
 .awds_container_2 {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 0.5fr;
@@ -28,10 +46,18 @@
 .awds_type_1 {
   grid-column: 2 /3;
   grid-row: 1 /2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  @extend%awards_txt_sml;
 }
 .awds_type_2 {
   grid-column: 2/ 3;
   grid-row: 2 / 3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  @extend%awards_txt_sml;
 }
 .awds_subcontainer_1 {
   grid-column: 3/ 4;
@@ -40,4 +66,38 @@
 .awds_subcontainer_2 {
   grid-column: 3/ 4;
   grid-row: 2 /3;
+}
+.awds_subtitle {
+  @extend%awards_txt_sml;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.awds_subtext {
+  @extend%awards_txt_sml;
+  @include opacity(0.6, normal);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.year {
+  @extend%awards_txt_sml;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.year_1 {
+  grid-column: 4/ 5;
+  grid-row: 1 /2;
+}
+.year_2 {
+  grid-column: 4/ 5;
+  grid-row: 2/ 3;
+}
+
+.awds_name {
+  @extend%awards_txt_sml;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
 }
