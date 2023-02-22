@@ -1,0 +1,43 @@
+.awards {
+  display: flex;
+  flex-direction: column;
+}
+
+.awds_container_1 {
+  display: flex;
+  &_flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.awds_main_text {
+  font-family: styles.$primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: styles.$primary-color;
+}
+
+.awds_container_2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.awds_type_1 {
+  grid-column: 2 /3;
+  grid-row: 1 /2;
+}
+.awds_type_2 {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+}
+.awds_subcontainer_1 {
+  grid-column: 3/ 4;
+  grid-row: 1 /2;
+}
+.awds_subcontainer_2 {
+  grid-column: 3/ 4;
+  grid-row: 2 /3;
+}
