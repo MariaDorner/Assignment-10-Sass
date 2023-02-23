@@ -7,8 +7,10 @@
   opacity: $opacity;
   mix-blend-mode: $mix-blend-mode;
 }
-@mixin border {
-  border-bottom: 2px solid #d8d8d8;
+@mixin border($pixel, $type, $color) {
+  border-bottom-width: $pixel;
+  border-bottom-style: $type;
+  border-bottom-color: $color;
 }
 .awards {
   display: flex;
@@ -47,7 +49,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 0.5fr;
   grid-template-rows: repeat(2, 1fr);
-  @include border;
+  @include border(2px, solid, #d8d8d8);
   padding-top: 20px;
   padding-bottom: 50px;
   row-gap: 50px;
