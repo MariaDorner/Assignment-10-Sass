@@ -1,0 +1,73 @@
+%generic_txt {
+  font-family: styles.$primary-font;
+  font-style: normal;
+  color: styles.$primary-color;
+}
+.contact {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  &_titles {
+    display: flex;
+    flex-direction: column;
+  }
+  &_title {
+    @extend%generic_txt;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    width: 475px;
+    height: 174px;
+  }
+
+  &_text {
+    @extend%generic_txt;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    @include opacity(0.8, normal);
+    width: 445px;
+    height: 56px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+  height: 291px;
+}
+.form_text {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  @extend%generic_txt;
+  @include opacity(0.6, normal);
+}
+.form_border {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  @include border(1px, solid, #d8d8d8);
+}
+.btn {
+  margin-top: 20px;
+  align-self: flex-start;
+  border: none;
+  width: 125px;
+  height: 50px;
+  background-color: #4a4ff2;
+  font-family: styles.$primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+}
+.map {
+  width: 1305px;
+  height: 705px;
+  padding: 20px;
+}
