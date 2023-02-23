@@ -65,6 +65,11 @@
   line-height: 20px;
   color: #fff;
   text-align: center;
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 4px 4px 1px 1px #0f103044;
+  transform: scale(1.01);
 }
 .map {
   width: 1305px;

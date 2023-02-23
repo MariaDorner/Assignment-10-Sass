@@ -14,6 +14,7 @@
   width: 90px;
   height: 20px;
 }
+
 %nav__link_style {
   font-family: styles.$primary-font;
   font-style: normal;
@@ -25,10 +26,16 @@
   text-decoration: none;
 }
 
-.nav_link {
+.nav_link:link,
+.nav_link:visited {
   @extend %nav__link_style;
   padding: 20px;
-  //ADD ACTIVE HOVER & VISITED LATER
+  transition: 0.2s;
+}
+.nav_link:hover,
+.nav_link:active {
+  color: #4a4ff2;
+  text-shadow: 2px 2px 4px #0f103044;
 }
 //Footer
 .footer_container {
