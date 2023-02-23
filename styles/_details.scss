@@ -1,0 +1,18 @@
+%generic_txt {
+  font-family: styles.$primary-font;
+  font-style: normal;
+  color: styles.$primary-color;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  &_flex {
+    display: flex;
+    flex-direction: column;
+  }
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
