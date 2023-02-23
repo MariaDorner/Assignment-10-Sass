@@ -6,13 +6,39 @@
 .details {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 25px;
   &_flex {
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
   }
   &_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 150px 150px;
+    grid-template-rows: repeat(6, 50px);
   }
+}
+.details_flex_title {
+  @extend%generic_txt;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  width: 495px;
+  height: 130px;
+}
+.details_flex_text {
+  @extend%generic_txt;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  @include opacity(0.6, normal);
+}
+.details_text_container {
+  width: 635px;
+  height: 222px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
